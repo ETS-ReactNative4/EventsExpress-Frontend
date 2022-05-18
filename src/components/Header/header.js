@@ -3,6 +3,7 @@ import Logo from "../shared/Logo/logo";
 import HeaderRightBlock from "./headerRightBlock/headerRightBlock";
 import MenuIcon from "../../assets/icons/header/Menu.png";
 import "./header.scss";
+import AuthForm from "../AuthForm/AuthForm";
 
 const Header = () => {
   return (
@@ -10,6 +11,7 @@ const Header = () => {
       <button type="button" tabIndex={0} className="header__menu">
         <img src={MenuIcon} alt="Menu" />
       </button>
+      <AuthForm />
       <Logo />
       <HeaderRightBlock />
     </nav>
